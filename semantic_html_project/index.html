@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru" itemscope itemtype="https://schema.org/WebSite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантическая верстка - Сервис по доставке готовой еды</title>
+
+    <!-- Микроразметка Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        "name": "Вкус на дом",
+        "description": "Сервис доставки готовой еды",
+        "url": "https://vkus.ru",
+        "telephone": "+79525112026",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Пушкина, д.10",
+            "addressLocality": "Сургут",
+            "addressCountry": "RU"
+        },
+        "openingHours": [
+            "Mo-Fr 10:00-22:00",
+            "Sa-Su 11:00-23:00"
+        ],
+        "priceRange": "₽₽",
+        "areaServed": "Сургут"
+    }
+    </script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+
+    <header itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <h1 itemprop="name">Доставка готовой еды - Вкус на дом!</h1>
+        <p itemprop="slogan">Освободите свой вечер. Мы позаботимся о самом вкусном.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#main">Главная</a></li>
+            <li><a href="#menu">Меню</a></li>
+            <li><a href="#schedule">Расписание доставки</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article id="main" itemscope itemtype="https://schema.org/Article">
+            <header>
+                <h2 itemprop="headline">Новое сезонное меню уже доступно!</h2>
+            </header>
+
+            <section>
+                <h3>Что нового?</h3>
+                <p itemprop="description">Мы добавили в меню тыквенный суп-пюре, запеченную утку с яблоками и салат с
+                    грибами!</p>
+                <figure itemscope itemtype="https://schema.org/ImageObject">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="https://i.pinimg.com/736x/12/5e/8d/125e8dc44ef4647e4e74b715b5c773bf.jpg"
+                                    alt="Тыквенный суп-пюре с гренками" width="250" itemprop="contentUrl">
+                            </td>
+                            <td>
+                                <img src="https://i.pinimg.com/1200x/ba/55/3e/ba553e70778cff9bfe18781d7b1528e0.jpg"
+                                    alt="Запеченная утка с яблоками и розмарином" width="250" itemprop="contentUrl">
+                            </td>
+                            <td>
+                                <img src="https://i.pinimg.com/736x/74/3e/be/743ebee9a0ae2bc39065c76e709b1ea6.jpg"
+                                    alt="Салат с грибами и свежей зеленью" width="250" itemprop="contentUrl">
+                            </td>
+                        </tr>
+                    </table>
+                    <figcaption>Новые блюда в осеннем меню</figcaption>
+                </figure>
+            </section>
+        </article>
+
+        <section id="menu">
+            <h2>Наше меню</h2>
+            <article itemscope itemtype="https://schema.org/MenuSection">
+                <h3 itemprop="name">Основные блюда</h3>
+                <ul>
+                    <li itemscope itemtype="https://schema.org/MenuItem">
+                        <span itemprop="name">Куриная грудка с овощами-гриль</span> -
+                        <span itemprop="description">Нежное куриное филе с сезонными овощами</span>
+                    </li>
+                    <li itemscope itemtype="https://schema.org/MenuItem">
+                        <span itemprop="name">Лосось с киноа и соусом песто</span> -
+                        <span itemprop="description">Запеченный лосось с киноа и домашним соусом песто</span>
+                    </li>
+                    <li itemscope itemtype="https://schema.org/MenuItem">
+                        <span itemprop="name">Запеченная утка с яблоками</span> -
+                        <span itemprop="description">Утка с яблоками и розмарином</span>
+                    </li>
+                </ul>
+            </article>
+
+            <article itemscope itemtype="https://schema.org/MenuSection">
+                <h3 itemprop="name">Супы</h3>
+                <ul>
+                    <li itemscope itemtype="https://schema.org/MenuItem">
+                        <span itemprop="name">Тыквенный суп-пюре</span> -
+                        <span itemprop="description">Сливочный суп с тыквой и гренками</span>
+                    </li>
+                    <li itemscope itemtype="https://schema.org/MenuItem">
+                        <span itemprop="name">Куриный суп с лапшой</span> -
+                        <span itemprop="description">Ароматный куриный бульон с домашней лапшой</span>
+                    </li>
+                </ul>
+            </article>
+
+            <article itemscope itemtype="https://schema.org/MenuSection">
+                <h3 itemprop="name">Салаты</h3>
+                <ul>
+                    <li itemscope itemtype="https://schema.org/MenuItem">
+                        <span itemprop="name">Фитнес-салат с авокадо</span> -
+                        <span itemprop="description">Свежие овощи, авокадо, руккола и лимонный соус</span>
+                    </li>
+                    <li itemscope itemtype="https://schema.org/MenuItem">
+                        <span itemprop="name">Салат с грибами</span> -
+                        <span itemprop="description">Шампиньоны, зелень и специальная заправка</span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <article itemscope itemtype="https://schema.org/Article">
+            <header>
+                <h2 itemprop="headline">Как мы готовим наши блюда</h2>
+            </header>
+
+            <p itemprop="description">Наша команда шеф-поваров готовит все блюда с утра в день доставки. Мы используем
+                только свежие продукты от проверенных поставщиков.</p>
+
+            <section>
+                <h3>Наши принципы приготовления:</h3>
+                <ul>
+                    <li>Никаких полуфабрикатов</li>
+                    <li>Минимум обработки для сохранения питательных веществ</li>
+                    <li>Сбалансированное соотношение БЖУ</li>
+                </ul>
+            </section>
+        </article>
+
+        <section id="about" itemscope itemtype="https://schema.org/Service">
+            <h2 itemprop="name">О нас</h2>
+            <p itemprop="description">Мы доставляем готовые блюда по всему городу с 10:00 до 22:00. Минимальная сумма
+                заказа - 500 рублей.</p>
+            <meta itemprop="serviceType" content="Доставка еды">
+        </section>
+
+        <section id="schedule">
+            <h2>Расписание доставки по районам</h2>
+            <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse">
+                <thead>
+                    <tr>
+                        <th bgcolor="#f0f0f0">Район</th>
+                        <th bgcolor="#f0f0f0">Понедельник - Пятница</th>
+                        <th bgcolor="#f0f0f0">Суббота - Воскресенье</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                        <td><strong>Центральный</strong></td>
+                        <td>
+                            <meta itemprop="opens" content="10:00">
+                            <meta itemprop="closes" content="22:00">
+                            10:00 - 22:00
+                        </td>
+                        <td>
+                            <meta itemprop="opens" content="11:00">
+                            <meta itemprop="closes" content="23:00">
+                            11:00 - 23:00
+                        </td>
+                    </tr>
+                    <tr itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                        <td><strong>Северный жилой</strong></td>
+                        <td>
+                            <meta itemprop="opens" content="12:00">
+                            <meta itemprop="closes" content="20:00">
+                            12:00 - 20:00
+                        </td>
+                        <td>
+                            <meta itemprop="opens" content="12:00">
+                            <meta itemprop="closes" content="21:00">
+                            12:00 - 21:00
+                        </td>
+                    </tr>
+                    <tr itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+                        <td><strong>Восточный</strong></td>
+                        <td>
+                            <meta itemprop="opens" content="11:00">
+                            <meta itemprop="closes" content="21:00">
+                            11:00 - 21:00
+                        </td>
+                        <td>
+                            <meta itemprop="opens" content="12:00">
+                            <meta itemprop="closes" content="22:00">
+                            12:00 - 22:00
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Подпишитесь на наши новости и акции</h2>
+            <!-- Исправлено: убрано itemscope и itemtype с form -->
+            <form>
+                <label for="email">Ваша почта</label>
+                <!-- Исправлено: убрано itemprop="object" с input -->
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Акции</h3>
+        <p itemscope itemtype="https://schema.org/Offer">
+            При заказе от <span itemprop="price">1500</span> <span itemprop="priceCurrency" content="RUB">рублей</span>
+            - доставка бесплатно!
+            <link itemprop="availability" href="https://schema.org/InStock">
+        </p>
+        <p>При первом заказе из осеннего меню - скидка 15%!</p>
+
+        <h3>Хиты осени</h3>
+        <ol>
+            <li itemscope itemtype="https://schema.org/MenuItem">
+                <span itemprop="name">Куриная грудка с овощами</span>
+            </li>
+            <li itemscope itemtype="https://schema.org/MenuItem">
+                <span itemprop="name">Лосось с киноа</span>
+            </li>
+            <li itemscope itemtype="https://schema.org/MenuItem">
+                <span itemprop="name">Фитнес-салат с авокадо</span>
+            </li>
+        </ol>
+
+        <h3>Мы в соцсетях</h3>
+        <ul>
+            <li><a href="#" itemprop="sameAs">Телеграм</a></li>
+        </ul>
+    </aside>
+
+    <!-- Исправлено: убран itemtype="PostalAddress" с footer, добавлен div для адреса -->
+    <footer id="contact">
+        <address>
+            Контакты: <br>
+            Телефон: <a href="tel:+79525112026">+7 (952) 511-20-26</a><br>
+            <!-- Исправлено: почта теперь не внутри элемента с itemtype PostalAddress -->
+            Почта: <a href="mailto:info@vkus.ru">info@vkus.ru</a><br>
+            <!-- Исправлено: адрес теперь внутри отдельного div с itemtype PostalAddress -->
+            <div itemscope itemtype="https://schema.org/PostalAddress">
+                Адрес: <span itemprop="addressLocality">г. Сургут</span>, <span itemprop="streetAddress">ул. Пушкина, д.10</span>
+            </div>
+        </address>
+    </footer>
+</body>
+
+</html>
