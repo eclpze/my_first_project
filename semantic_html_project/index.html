@@ -209,10 +209,8 @@
 
         <section>
             <h2>Подпишитесь на наши новости и акции</h2>
-            <!-- Исправлено: убрано itemscope и itemtype с form -->
             <form>
                 <label for="email">Ваша почта</label>
-                <!-- Исправлено: убрано itemprop="object" с input -->
                 <input type="email" id="email" name="email" required>
                 <button type="submit">Подписаться</button>
             </form>
@@ -247,14 +245,11 @@
         </ul>
     </aside>
 
-    <!-- Исправлено: убран itemtype="PostalAddress" с footer, добавлен div для адреса -->
     <footer id="contact">
         <address>
             Контакты: <br>
             Телефон: <a href="tel:+79525112026">+7 (952) 511-20-26</a><br>
-            <!-- Исправлено: почта теперь не внутри элемента с itemtype PostalAddress -->
             Почта: <a href="mailto:info@vkus.ru">info@vkus.ru</a><br>
-            <!-- Исправлено: адрес теперь внутри отдельного div с itemtype PostalAddress -->
             <div itemscope itemtype="https://schema.org/PostalAddress">
                 Адрес: <span itemprop="addressLocality">г. Сургут</span>, <span itemprop="streetAddress">ул. Пушкина, д.10</span>
             </div>
