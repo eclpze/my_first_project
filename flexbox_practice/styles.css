@@ -1,0 +1,379 @@
+/* Общие стили */
+body {
+    color: #5a4a6f;
+    background-color: #faf5ff;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Часть 2.1: Горизонтальное меню навигации */
+.navbar {
+    background-color: #e6d9ff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 15px rgba(168, 139, 217, 0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #6b4b8a;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: #6b4b8a;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    background-color: rgba(107, 75, 138, 0.1);
+    color: #8a6baf;
+    transform: translateY(-2px);
+}
+
+/* Часть 2.2: Карточки в строку */
+.cards-section {
+    padding: 4rem 0;
+    background-color: transparent;
+}
+
+.cards-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    color: #6b4b8a;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #f0e6ff;
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    flex: 1;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(168, 139, 217, 0.15);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(168, 139, 217, 0.25);
+}
+
+.card h3 {
+    color: #6b4b8a;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.card p {
+    color: #7d6b8f;
+    line-height: 1.6;
+}
+
+/* Часть 3.1: Основной макет страницы */
+.main-layout {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.main-header {
+    background-color: #e6d9ff;
+    color: #6b4b8a;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(168, 139, 217, 0.2);
+    margin-bottom: 2rem;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f0e6ff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(168, 139, 217, 0.15);
+}
+
+.sidebar h3 {
+    color: #6b4b8a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(107, 75, 138, 0.2);
+    color: #7d6b8f;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar li:hover {
+    background-color: rgba(107, 75, 138, 0.1);
+    transform: translateX(5px);
+}
+
+.main-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-item {
+    background-color: #f0e6ff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(168, 139, 217, 0.15);
+    transition: all 0.3s ease;
+}
+
+.content-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(168, 139, 217, 0.25);
+}
+
+.content-item h2 {
+    color: #6b4b8a;
+    margin-bottom: 1rem;
+}
+
+.content-item p {
+    color: #7d6b8f;
+    line-height: 1.7;
+}
+
+/* Часть 3.2: Футер с равными колонками */
+.footer {
+    background-color: #6b4b8a;
+    color: #e6d9ff;
+    padding: 4rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 1.5rem;
+}
+
+.footer-column h4 {
+    margin-bottom: 1.5rem;
+    color: #f0e6ff;
+    font-size: 1.2rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-column a {
+    color: #d8c6ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.3rem 0;
+    display: inline-block;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* Часть 4.1: Центрирование и выравнивание */
+.centering-demo {
+    height: 500px;
+    background-color: #d8c6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.centering-demo::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: float 20s infinite linear;
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    100% { transform: translate(-50px, -50px) rotate(360deg); }
+}
+
+.centered-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 3rem 4rem;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(107, 75, 138, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.centered-box h2 {
+    color: #6b4b8a;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.centered-box p {
+    color: #7d6b8f;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.decorative-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #d8c6ff;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(107, 75, 138, 0.3);
+}
+
+/* Часть 4.2: Адаптивность с Flexbox */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .cards-container {
+        flex-direction: column;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .footer-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .centered-box {
+        margin: 1rem;
+        padding: 2rem;
+    }
+}
+
+/* Часть 5.1: Эксперименты с порядком элементов */
+.order-demo {
+    padding: 4rem 0;
+    background-color: #f0e6ff;
+}
+
+.order-demo h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #6b4b8a;
+    font-size: 2.2rem;
+}
+
+.order-container {
+    display: flex;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.order-item {
+    padding: 2rem 1rem;
+    background-color: #e6d9ff;
+    color: #6b4b8a;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(168, 139, 217, 0.2);
+    transition: all 0.3s ease;
+}
+
+.order-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(168, 139, 217, 0.3);
+}
+
+.item1 { order: 0; background-color: #e6d9ff; }
+.item2 { order: 3; background-color: #d8c6ff; }
+.item3 { order: 1; background-color: #c9b2ff; }
+.item4 { order: 2; background-color: #ba9ff0; }
